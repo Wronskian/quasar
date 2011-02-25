@@ -1,4 +1,14 @@
 Quasar::Application.routes.draw do
+
+  root         :to => 'pages#home'
+  
+  match '/about'   => 'pages#about'
+  match '/contact' => 'pages#contact'
+  match '/help'    => 'pages#help'
+  match '/terms'   => 'pages#terms'
+  match '/privacy' => 'pages#privacy'
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
