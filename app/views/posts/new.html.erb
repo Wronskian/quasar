@@ -1,2 +1,8 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<% form_for(@post) do |f| %>
+  <%= render 'shared/post_error_messages' %>
+  
+  <p><%= f.label :content, "Post" %><br />
+  <%= f.text_area :content %></p>
+  
+  <%= f.submit "Post" %>
+<% end %>
